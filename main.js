@@ -31,12 +31,11 @@ const team = [
   },
 ];
 
-console.log("ciao");
-let teamContainer = document.getElementById("container");
+
+
 
 function creazioneCard( card ){
-  console.log(card.image)
-  teamContainer.innerHTML +=
+  document.getElementById("container").innerHTML +=
   `<div class="team-card">
     <div class="card-image">
       <img
@@ -53,7 +52,7 @@ function creazioneCard( card ){
     `
 }
 
-for(let i=0; i<= team.length; i++){
+for(let i=0; i < team.length; i++){
   creazioneCard( team[i] )
 }
 
