@@ -40,7 +40,7 @@ function creazioneCard(){
     <div class="card-image">
       <img
         src="${team[i].image}"
-        alt="Wayne Barnett"
+        alt=""
       />
       </div>
       <div class="card-text">
@@ -55,3 +55,6 @@ function creazioneCard(){
 for(i=0; i<= team.length; i++){
   creazioneCard()
 }
+
+let bottoneAdd = document.getElementById("addMemberButton");
+console.log(bottoneAdd)
