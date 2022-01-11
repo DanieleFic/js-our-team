@@ -88,10 +88,15 @@ function creazioneCard2(){
     //Pusha il nuovo oggetto nell array
     team.push(userCard)
     console.log(team)
+    svuotaForm()
 }
 
 //funzione che al click ti crea le card
 inserisciPersona.addEventListener("click", creazioneCard2);
 
 
-
+function svuotaForm(){
+  document.getElementById("name").value = "";
+  document.getElementById("role").value = "";
+  document.getElementById("image").value = "" ;
+}
